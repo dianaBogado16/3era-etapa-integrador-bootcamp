@@ -23,7 +23,7 @@ const crearCarrito = async(carrito) => {
 
         return carritoGuardado
     } catch (error) {
-        console.log('No se pudo crear el carrito');
+        throw error
     }
 
 }
