@@ -1,10 +1,17 @@
-//! CREAMOS EL ESQUEMA
-
 import mongoose from "mongoose"
+//import { timeStamp } from "node:console"
 
-const carritoSchema = mongoose.Schema({
-    carrito: Array
-})
+
+//! CREAMOS EL ESQUEMA
+const carritoSchema = mongoose.Schema(
+    {
+        carrito: Array
+    },
+    {
+        timestamps: true, // createAt | updatedAt
+        versionKey: false
+    }
+)
 
 //! Apartir del esquema creo el modelo
 

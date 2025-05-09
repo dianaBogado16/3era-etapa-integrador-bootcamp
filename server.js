@@ -7,6 +7,7 @@ import connection from './utils/connection.js' //siempre recordar poner el .js
 import routerProductos from './routers/productos.router.js'
 import routerUsuarios from './routers/usuarios.router.js'
 import routerUploads from './routers/uploads.router.js'
+import routerCarrito from './routers/carrito.router.js'
 
 
 // ! Constantes
@@ -35,6 +36,7 @@ app.use(cors(corsConfig)) //cors() -> todos los origenes pueden acceder
 app.use('/api/v1/productos', routerProductos)
 app.use('/api/v1/usuarios', routerUsuarios)
 app.use('/api/v1/uploads', routerUploads)
+app.use('/api/v1/carrito', routerCarrito)
 
 
 app.get('/', (req, res) => {

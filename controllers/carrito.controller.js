@@ -1,4 +1,5 @@
-import model from '../models/carrito.model'
+
+import model from '../models/carrito.model.js'
 
 const guardarCarrito = async(req,res) => {
     const carrito= req.body
