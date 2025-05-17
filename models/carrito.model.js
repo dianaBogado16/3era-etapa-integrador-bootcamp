@@ -2,6 +2,7 @@ import mongoose from "mongoose"
 //import { timeStamp } from "node:console"
 
 
+
 //! CREAMOS EL ESQUEMA
 const carritoSchema = mongoose.Schema(
     {

@@ -1,11 +1,12 @@
 import { model } from 'mongoose'
 import models from '../models/productos.model.js'
+import handleMongoId from '../utils/handle-mongo-id.js'
 
 
 const getAll = async(req, res) => {
     try {
         const productos = await models.obtenerTodosLosProductos()
-        res.json    (productos)
+        res.json(handleMongoId(productos))
         
     } catch (error) {
         console.log(error);
