@@ -30,7 +30,7 @@ const create= async (req,res) => {
     const productoACrear = req.body
     try {
         const productoGuardado= await models.crearUnProducto(productoACrear)    
-        res.json(productoGuardado)
+        res.json(handleMongoId(productoGuardado))
         
     } catch (error) {
         console.log(error);
@@ -45,8 +45,8 @@ const update = async (req,res) => {
     productoAEditar.id = id 
     try {
         const productoEditado = await models.editarUnProducto(productoAEditar)
-        res.status(201).json(productoEditado) //recordar poner status 201 ya que si no se pone anda eso devolvera status 200 y no es del todo correcto
-        
+        res.status(201).json(handleMongoId(productoEditado)) //recordar poner status 201 ya que si no se pone anda eso devolvera status 200 y no es del todo correcto
+    
     } catch (error) {
         console.log(error);
         res.status(500).json({mensaje: 'No se pudo editar el producto solicitado'})
@@ -59,7 +59,7 @@ const remove = async (req, res) => {
 
     try {
         const productoEliminado = await models.eliminarProducto(id)
-        res.json(productoEliminado)
+        res.json(handleMongoId(productoEliminado))
         
     } catch (error) {
         console.log(error);
