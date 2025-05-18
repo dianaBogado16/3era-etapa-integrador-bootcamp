@@ -18,7 +18,7 @@ const getOne = async (req, res) => {
     const id = req.params.id
     try {
         const producto = await models.obtenerUnPoducto(id)
-        res.json(producto)
+        res.json(handleMongoId(producto))
         
     } catch (error) {
         console.log(error);
