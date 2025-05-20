@@ -21,6 +21,7 @@ const ProductoEsquema = mongoose.Schema(
     {
         timestamps: true, // createAt | updatedAt
         versionKey: false
+        
     }
 )
 

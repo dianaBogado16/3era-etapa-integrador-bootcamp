@@ -29,6 +29,7 @@ const corsConfig = {
 // ! Middlewares
 app.use(express.json()) // Traduce a Express el objeto que llega por el body
 app.use(express.static(path.join('public'))) // el join lo que va a hacer es poner '/' o '\' dependiendeo del SO
+// hicimos accesible la carpeta publica desde el exterior
 app.use(cors(corsConfig)) //cors() -> todos los origenes pueden acceder
 //con corsconfig hacemos que no puedan acceder a nuestra backend
 

@@ -8,8 +8,15 @@ const uploadImagen = (req, res) => {
             mensaje: 'No se cargo la imagen necesaria'
         })
     }
-    res.json( {
-        foto: imagen.filename 
+
+    console.log(req.protocol); // averiguar si es http o https
+    console.log(req.get('host')); //localhost:8080
+    console.log(imagen.filename);
+
+    const urlCompletaBack = `${req.protocol}://${req.get('host')}/uploads/${imagen.filename}`
+
+    res.status(201).json( {
+        foto: urlCompletaBack
     })
 
 }
