@@ -5,12 +5,12 @@ Diana Bogado
 
 # Link de Github
 ```sh
-
+https://github.com/dianaBogado16/3era-etapa-prueba.git
 ```
 
 # Link de Netlify
 ```sh
-https://github.com/dianaBogado16/3era-etapa-prueba.git
+
 ```
 
 
