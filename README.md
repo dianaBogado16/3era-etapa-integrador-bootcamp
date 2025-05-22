@@ -13,7 +13,6 @@ https://github.com/dianaBogado16/3era-etapa-prueba.git
 
 ```
 
-
 # Link de Render
 ```sh
 https://threeera-etapa-prueba-1.onrender.com 
