@@ -76,15 +76,12 @@ const editarUnProducto = async (productoAEditar) => {
 }
 
 const eliminarProducto = async (id) => {
-    
     try {
         const productoEliminado = await  ProductoModelo.findByIdAndDelete(id)
         return productoEliminado
     } catch (error) {
         throw error
     }
-    
-
 
 }
 

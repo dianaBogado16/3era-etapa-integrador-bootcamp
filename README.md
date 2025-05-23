@@ -1,6 +1,6 @@
 # Nombre y apellido
 ```sh
-Diana Bogado
+Diana Milagros Bogado
 ```
 
 # Link de Github

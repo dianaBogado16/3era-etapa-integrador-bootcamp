@@ -1,8 +1,5 @@
 import mongoose from "mongoose"
 
-
-
-
 //! CREAMOS EL ESQUEMA
 const carritoSchema = mongoose.Schema(
     {
@@ -17,8 +14,6 @@ const carritoSchema = mongoose.Schema(
 //! Apartir del esquema creo el modelo
 
 const carritoModel = mongoose.model('carritos',carritoSchema)
-
-
 
 
 const crearCarrito = async(carrito) => {
