@@ -1,5 +1,5 @@
 import mongoose from "mongoose"
-//import { timeStamp } from "node:console"
+
 
 
 
@@ -19,9 +19,7 @@ const carritoSchema = mongoose.Schema(
 const carritoModel = mongoose.model('carritos',carritoSchema)
 
 
-//-------------------------------------------------------------
-// Metodos que nos va a servir de interfaz  para ineractuar con la DB
-//-------------------------------------------------------------
+
 
 const crearCarrito = async(carrito) => {
 
