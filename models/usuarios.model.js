@@ -38,7 +38,7 @@ const obtenerUnUsuario = () => {
 const crearUnUsuario = async (nuevoUsuario) => {
     try {
         const usuarioCreado = new UsuarioModelo(nuevoUsuario)
-        const usuarioGuardado = await usuarioCreado.save() //aca metemos un await porque estamos comunicandonos con una base de datos, es una peticion asincronica
+        const usuarioGuardado = await usuarioCreado.save()
         return usuarioGuardado
     } catch (error) {
         throw error
