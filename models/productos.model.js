@@ -84,7 +84,7 @@ const eliminarProducto = async (id) => {
         throw error
     }
     
-    console.log('eliminar un producto');
+
 
 }
 
